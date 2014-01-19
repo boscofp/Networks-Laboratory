@@ -1,0 +1,17 @@
+Usage of the code
+
+1. First compile using
+	gcc server.c -oserver -lpthread
+	gcc client.c -oclient -lpthread
+
+2. Run the server first 
+	./server localhost portno
+
+3. Then any no of client by 
+	./client portno
+
+4. To chat from client to client
+	user 1: Hello
+
+5. List of online users will be given to each client
+
