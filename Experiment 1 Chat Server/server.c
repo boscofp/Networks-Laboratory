@@ -153,6 +153,9 @@ int main(int argc, char *argv[])
                 		bzero(buffer,256);
           			sprintf(buffer,"user%d online",users[j].id);
         			write(newsockfd,buffer,256);
+        			bzero(buffer,256);
+          			sprintf(buffer,"user%d online",id);
+        			write(users[j].sd,buffer,256);
         		}
                 	threadErrorCode=pthread_create(&threads[t],NULL,chat,(void *) &users[i]);
                 	i++;
